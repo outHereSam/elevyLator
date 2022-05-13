@@ -8,9 +8,20 @@ body, input {
     font-family: 'Space Mono', monospace;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
     background-color: #D6D3F0;
-    /* height: 100vh; */
+    height: 100vh;
+    position: relative;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,9 +35,10 @@ body {
 
 .note {
     background-color: #FFF9E9;
-    margin: 60px 20px 30px 20px;
+    margin: 60px auto 30px auto;
     border-radius: 4px;
     padding: 15px 10px;
+    max-width: 335px;
 }
 
 .note p {
@@ -37,10 +49,11 @@ body {
 
 #main-card {
     background-color: #fff;
-    width: 100%;
     padding: 40px 30px;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 label {
@@ -116,8 +129,15 @@ span {
     color: #0B3142;
     background-color: #C6B9CD;
     border-radius: 4px;
+    transition: background-color 0.2s ease-in;
 }
 
 #calculate:hover {
     background-color: #d8ccdf;
+}
+
+@media only screen and (min-width: 700px) {
+    #main-card {
+        width: 50%;
+    }
 }
