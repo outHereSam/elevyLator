@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-color: #D6D3F0;
+    /* height: 100vh; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.logo {
+    display: block;
+    margin: 60px auto;
+}
+
+.note {
+    background-color: #FFF9E9;
+    margin: 60px 20px 30px 20px;
+    border-radius: 4px;
+    padding: 15px 10px;
+}
+
+.note p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #0B3142;
+}
+
+#main-card {
+    background-color: #fff;
+    width: 100%;
+    padding: 40px 30px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+label {
+    font-size: 14px;
+    color: #0F5257;
+}
+
+input[type="number"] {
+    border: none;
+    width: 100%;
+    background-color: #EEEAF1;
+    appearance: none;
+    outline: none;
+    border: solid 3px transparent;
+    border: solid 3px transparent;
+    transition: border 0.2s ease-in;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px 0 30px 0;
+    padding: 15px 15px;
+    font-size: 16px;
+
+    background-image: url('./assets/currency.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+input:focus {
+    border-color: #b2acee;
+}
+
+.results {
+    background-color: #9C92A3;
+    padding: 40px 20px;
+    color: #fff;
+    border-radius: 16px;
+    margin: 0 0 30px 0;
+}
+
+.label {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.calculated-amount {
+    font-size: 24px;
+}
+
+span {
+    font-size: 13px;
+    color: #DDD3E4;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+.result-item:last-of-type {
+    margin-bottom: 0;
+}
+
+#calculate {
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0B3142;
+    background-color: #C6B9CD;
+    border-radius: 4px;
+}
+
+#calculate:hover {
+    background-color: #d8ccdf;
+}
