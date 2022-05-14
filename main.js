@@ -33,7 +33,7 @@ const calculateElevy = (amount) => {
         total.innerHTML = "₵" +  totalAmount.toFixed(2);
 
     } else {
-        taxAmount.innerHTML = "₵"  + amount;
+        taxAmount.innerHTML = "₵"  + 0.00;
         total.innerHTML = "₵" +  amount;
     }
 }
